@@ -56,6 +56,7 @@ async def quote(ctx, user: discord.User = None):
 
 
 @bot.command(name='addquote', help='Adds quote')
+@commands.has_any_role('♕ Sangue Real','Humanos')
 async def addquote(ctx, user: discord.User, quote):
 
     author = user.name
